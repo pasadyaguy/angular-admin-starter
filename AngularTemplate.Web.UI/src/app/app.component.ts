@@ -50,14 +50,16 @@ export class AppComponent implements OnInit, OnDestroy {
       this.handleAuthCallback();
     }
 
-    if (!this.adalService.userInfo.authenticated) {
-      this.adalService.login();
-    } else {
-      if (parent === top && !(hashUrl.includes('access_token'))) {
-        console.log('loading start-up items');
-        this.loadAppStartUpItems();
-      }
-    }
+    // UNCOMMENT BELOW FOR AZURE AD AUTHENTICATION
+    
+    // if (!this.adalService.userInfo.authenticated) {
+    //   this.adalService.login();
+    // } else {
+    //   if (parent === top && !(hashUrl.includes('access_token'))) {
+    //     console.log('loading start-up items');
+    //     this.loadAppStartUpItems();
+    //   }
+    // }
   }
 
   ngOnDestroy() {
