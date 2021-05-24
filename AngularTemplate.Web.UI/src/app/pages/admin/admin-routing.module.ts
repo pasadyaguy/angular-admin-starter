@@ -11,7 +11,7 @@ const routes: Routes = [{
     children: [
         {
             path: 'settings',
-            canActivate: [AdalGuard],
+            //canActivate: [AdalGuard],
             component: SettingsComponent,
         },        
     ],
