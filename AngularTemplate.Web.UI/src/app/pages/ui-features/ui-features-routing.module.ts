@@ -13,22 +13,22 @@ const routes: Routes = [{
     children: [
         {
             path: 'editor',
-            canActivate: [AdalGuard],
+            //canActivate: [AdalGuard],
             component: EditorDemoComponent,
         },
         {
             path: 'grid',
-            canActivate: [AdalGuard],
+            //canActivate: [AdalGuard],
             component: GridDemoComponent,
         },
         {
             path: 'modal',
-            canActivate: [AdalGuard],
+            //canActivate: [AdalGuard],
             component: ModalDemoComponent,
         },
         {
             path: 'toaster',
-            canActivate: [AdalGuard],
+            //canActivate: [AdalGuard],
             component: ToasterDemoComponent,
         }
     ],
