@@ -119,7 +119,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
         }
       });
 
-      this.getAzureUser();
+      //this.getAzureUser();
   }
 
   ngOnDestroy() {
